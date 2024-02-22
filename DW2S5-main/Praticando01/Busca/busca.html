@@ -16,22 +16,30 @@
 <body>
     <nav>
         <ul>
-            <li><a href="busca.html">Início</a></li>
-            <li><a href="#busca">Busca</a></li>
-            <li><a href="#formulario">Formulário/Tabela</a></li>
-            <li><a href="#postagem">Postagem c/ Imagem</a></li>
+            <li><a href="file:///C:/Users/Aluno/Downloads/desenvolvimentoWeb2-main/desenvolvimentoWeb2-main/DW2S5-main/Praticando01/index.html">Início</a></li>
+            <li><a href="file:///C:/Users/Aluno/Downloads/desenvolvimentoWeb2-main/desenvolvimentoWeb2-main/DW2S5-main/Praticando01/Busca/busca.html">Busca</a></li>
+            <li><a href="file:///C:/Users/Aluno/Downloads/desenvolvimentoWeb2-main/desenvolvimentoWeb2-main/DW2S5-main/Praticando01/Formulario/formulario.html">Formulário/Tabela</a></li>
+            <li><a href="file:///C:/Users/Aluno/Downloads/desenvolvimentoWeb2-main/desenvolvimentoWeb2-main/DW2S5-main/Praticando01/Postagem/postagem.html">Postagem c/ Imagem</a></li>
         </ul>
     </nav>
     <div id="conteudo">
-
         <h1>Busca de conteúdo</h1>
         <input id="digitar" type="text" placeholder="Digite para buscar">
-        <button id="pesquisar">Pesquisar</button>
+        <button onclick="pesquisarNoGoogle()">Pesquisar</button>
     </div>
 
+    <script>
+        function pesquisarNoGoogle() {
+            const inputElement = document.getElementById("digitar");
+            const conteudoDigitado = inputElement.value;
+            const url = `https://www.google.com/search?q=${encodeURIComponent(conteudoDigitado)}`;
+            window.location.href = url;
+        }
+    </script>
 
-    <a class="rodape" href="#">Sobre a empresa</a>
-    <a class="rodape" href="#">Contato</a>
+
+    <a class="rodape" href="https://example.com/">Sobre a empresa</a>
+    <a class="rodape" href="https://github.com/Ormelezi">Contato</a>
 
 
 </body>
