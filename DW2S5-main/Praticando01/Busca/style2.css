@@ -1,0 +1,68 @@
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 73%;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#conteudo {
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-image: url(imagemFundo.jpg);
+    height: 400px;
+    margin-bottom: 50px;
+    color: rgb(255, 208, 0);
+
+}
+
+.rodape {
+    display: block;
+    margin-bottom: 20px;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+#pesquisar {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#digitar {
+    height: 34px;
+    width: 400px;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 100px;
+}

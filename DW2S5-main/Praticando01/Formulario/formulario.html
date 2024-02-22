@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="busca/busca.html">Busca</a></li>
+            <li><a href="formulario/formulario.html">Formulário/Tabela</a></li>
+            <li><a href="#postagem">Postagem c/ Imagem</a></li>
+        </ul>
+    </nav>
+    <h1>Formulário de cadastro e Tabela com dados</h1>
+    <div id="conteudo">
+        <form id="formulario">
+            Nome completo <input class="campos" type="text" name="nome"> <br>
+            Telefone <input class="campos" type="tel" name="tel" placeholder="   (99) 99999-9999"> <br>
+            Email <input class="campos" type="email" name="e-mail" placeholder="   seu@email.aqui"> <br>
+            Estado de residencia
+            <select id="estado" name="estado">
+                <option value="AC">[Selecione]</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select> <br>
+            <button id="enviar">Enviar</button><br>
+            <button id="limpar">Limpar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Diogo José Bernardo</th>
+                    <td>(17) 99666-2145</td>
+                    <td>diogojbernardo@gmail.com</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <th scope="row">Teste Exemplo Um</th>
+                    <td>(17) 99456-3456</td>
+                    <td>testestes@gmail.com</td>
+                    <td>Rio Grande do Sul</td>
+                </tr>
+                <tr>
+                    <th scope="row">Teste Exemplo Dois</th>
+                    <td>(17) 99345-1234</td>
+                    <td>teste@gmail.com</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
